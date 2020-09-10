@@ -1,7 +1,5 @@
 
 # React-Redux Boilerplate <!-- omit in toc --> 
-*By Brendan Falk*  
-
 
 Table of Contents
 - [Get started](#get-started)
@@ -72,6 +70,9 @@ A saga is middleware for Redux. It intercepts your actions. Usually it does some
 
 This is a little trickier than I thought. It's not like you just get a global variable that you can use anywhere (like Vue). Instead, you import the state you want and the actions you want, and then add them to your component's `props` property.
 
+You can sort of think of this step as:
+1. What data should this component be able to read from the store
+2. What actions should this component be able to make that can update the store
 
 
 You can see a good example in [`src/HomePage/index.tsx`](src/HomePage/index.tsx)
@@ -88,7 +89,7 @@ import { connect } from 'react-redux'
 import { getNews } from './actions'
 ```
 
-3. Connect
+3. Decide what state and which actions the component will use. Connect it to the component when you do export default
 ```jsx
 const mapStateToProps = (state: any, ownProps: any) => {
 
