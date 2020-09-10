@@ -16,7 +16,7 @@ Table of Contents
 - [TODO:](#todo)
 
 ## Get started
-```shell
+```bash
 git clone https://github.com/falky97/react-redux-boilerplate.git 
 cd react-redux-boilerplate
 npm install
@@ -117,5 +117,6 @@ I would suggest duplicating the `src/HomePage/` container.
 
 ## TODO:
 
-[] Build a more robust UI that does a few more things with HN
-[] Set up Sagas with Auth. I feel like I using data from the store in a Saga may not work e.g. making authenticated API calls.
+- [ ] Build a more robust UI that does a few more things with HN
+- [ ] Set up Sagas with Auth. I feel like I using data from the store in a Saga may not work e.g. making authenticated API calls.
+
